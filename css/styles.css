@@ -73,7 +73,7 @@ img {
 }
 .contact-list{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -103,7 +103,7 @@ img {
 }
 /* index */
 .background-main{
-    background-color: var(--background);
+    background-color: var(--background-main-footer);
 }
 .main{
     display: flex;
@@ -111,6 +111,9 @@ img {
     align-items: center;
     gap: 30px;
     padding: 200px 0;
+    background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img-main.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 h1{
     color: var(--text-white);
