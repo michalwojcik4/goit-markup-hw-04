@@ -261,6 +261,38 @@ h1{
     fill:var(--text-white);
     background-color: var(--focus-hover);
 }
+/*client section*/
+.client h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 0 50px;
+}
+.client-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.client-list li{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icon-fill);
+    border: 1px solid var(--icon-fill);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.client-list li:hover,
+.client-list li:focus{
+    fill: var(--focus-hover);
+    border-color: var(--focus-hover);
+}
 /* PORTFOLIO */
 .filter{
     padding-bottom: 50px;
@@ -325,10 +357,13 @@ h1{
 }
 /* footer section */
 .background-footer{
-    background-color: var(--background);
+    background-color: var(--background-main-footer);
 }
 .div-footer{
     padding: 60px 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
 }
 .logo-footer{
     font-family: 'Raleway', sans-serif;
@@ -361,4 +396,36 @@ h1{
 .address-link:focus,
 .address-link:hover{
     color: var(--focus-hover);
+}
+.second-box h2{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-white);
+    margin: 12px 0 20px;
+}
+.second-box ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.second-box li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: #FFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.second-box li:hover,
+.second-box li:focus{
+    background-color: var(--focus-hover);
 }
