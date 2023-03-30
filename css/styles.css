@@ -1,11 +1,13 @@
 :root{
-    --background: #2F303A;
+    --background-main-footer: #2F303A;
     --logo: #2196F3;
     --focus-hover: #2196F3;
     --basic-text-color:#212121;
     --text-grey: #757575;
     --text-white: #FFF;
     --background-color-team: #F5F4FA;
+    --background-color-box: #F5F4FA;
+    --icon-fill: #AFB1B8;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -48,7 +50,7 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    margin-right: 12px;
+    padding-right: 12px;
 }
 .menu-list{
     display: flex;
@@ -76,17 +78,28 @@ img {
     padding: 0;
     margin: 0;
 }
-.contact-link{
+.contact-list li{
+    fill: var(--text-grey);
+    color: var(--text-grey);
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contact-link-mail,
+.contact-link-tel{
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--text-grey);
+    color: currentColor;
 }
-.contact-link:focus,
-.contact-link:hover{
+
+.contact-list li:hover,
+.contact-list li:focus{
     color: var(--focus-hover);
+    fill: var(--focus-hover);
 }
 /* index */
 .background-main{
