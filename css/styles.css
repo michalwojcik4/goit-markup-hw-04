@@ -78,14 +78,6 @@ img {
     padding: 0;
     margin: 0;
 }
-.contact-list li{
-    fill: var(--text-grey);
-    color: var(--text-grey);
-    cursor: pointer;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
 .contact-link-mail,
 .contact-link-tel{
     text-decoration: none;
@@ -93,11 +85,16 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: currentColor;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-grey);
+    fill: var(--text-grey);
 }
-
-.contact-list li:hover,
-.contact-list li:focus{
+.contact-link-mail:hover,
+.contact-link-mail:focus,
+.contact-link-tel:hover,
+.contact-link-tel:focus{
     color: var(--focus-hover);
     fill: var(--focus-hover);
 }
@@ -246,20 +243,20 @@ h1{
     justify-content: center;
     gap: 10px;
 }
-.team-icons-list li{
+.team-icon{
+    display: block;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
-    cursor: pointer;
     fill: var(--icon-fill);
 }
-.team-icons-list li:hover,
-.team-icons-list li:focus{
-    fill:var(--text-white);
+.team-icon:hover,
+.team-icon:focus{
     background-color: var(--focus-hover);
+    fill: var(--text-white);
 }
 /*client section*/
 .client h2{
@@ -277,7 +274,8 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-.client-list li{
+.client-icon{
+    display: block;
     width: 170px;
     height: 92px;
     display: flex;
@@ -286,10 +284,9 @@ h1{
     fill: var(--icon-fill);
     border: 1px solid var(--icon-fill);
     border-radius: 4px;
-    cursor: pointer;
 }
-.client-list li:hover,
-.client-list li:focus{
+.client-icon:hover,
+.client-icon:focus{
     fill: var(--focus-hover);
     border-color: var(--focus-hover);
 }
@@ -401,7 +398,7 @@ h1{
 .address-link:hover{
     color: var(--focus-hover);
 }
-.second-box h2{
+.footer-second-box h2{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -410,7 +407,7 @@ h1{
     color: var(--text-white);
     margin: 12px 0 20px;
 }
-.second-box ul{
+.footer-second-box ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -418,18 +415,18 @@ h1{
     justify-content: flex-start;
     gap: 10px;
 }
-.second-box li{
+.second-box-icon{
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    cursor: pointer;
     fill: #FFF;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.second-box li:hover,
-.second-box li:focus{
+.second-box-icon:hover,
+.second-box-icon:focus{
     background-color: var(--focus-hover);
 }
