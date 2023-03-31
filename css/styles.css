@@ -78,8 +78,7 @@ img {
     padding: 0;
     margin: 0;
 }
-.contact-link-mail,
-.contact-link-tel{
+.contact-link{
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -91,10 +90,8 @@ img {
     color: var(--text-grey);
     fill: var(--text-grey);
 }
-.contact-link-mail:hover,
-.contact-link-mail:focus,
-.contact-link-tel:hover,
-.contact-link-tel:focus{
+.contact-link:hover,
+.contact-link:focus{
     color: var(--focus-hover);
     fill: var(--focus-hover);
 }
